@@ -1,0 +1,105 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem;
+  /* background-color: var(--color-bg); 
+  border-bottom: 1px solid #c99aa0;*/
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  height: 80px;
+}
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  justify-content: space-between;
+  max-width: var(--width-container);
+  position: relative;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform ease-in-out 0.3s;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
+}
+.header__logo img {
+  width: 50px;
+}
+.logo__title {
+  color: var(--color-bg);
+  font-size: 1.5rem;
+}
+.menu-hamburguer img {
+  width: 40px;
+  transition: opacity 0.3s ease;
+  margin-left: auto;
+}
+.menu-hamburguer.active img {
+  content: url("../assets/close.svg");
+}
+
+.nav__list {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  text-align: right;
+
+  z-index: 1000;
+  display: none;
+  border-radius: var(--border-radius-sm);
+}
+.nav__list.active {
+  display: block;
+}
+.nav__list-item {
+  font-size: 1.25rem;
+  color: var(--color-bg);
+  padding: 0.25rem 1rem;
+  border-radius: var(--border-radius-sm);
+  display: block;
+  transition: ease-in-out 0.3s;
+}
+
+.nav__list-item:hover {
+  text-shadow: 0 0 10px var(--color-bg);
+  transform: translateX(-4px);
+}
+.nav__contato {
+  display: none;
+  border-radius: var(--border-radius-sm);
+  transition: ease-in-out 0.3s;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+.nav__contato:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px var(--color-bottoms);
+}
+@media (width >=768px) {
+  header {
+    padding: 0.5rem 4rem;
+  }
+  .nav__list {
+    display: flex;
+    position: sticky;
+    background: transparent;
+    gap: 1rem;
+  }
+  .menu-hamburguer {
+    display: none;
+  }
+  .nav__contato {
+    display: block;
+  }
+}

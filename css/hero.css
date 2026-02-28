@@ -1,0 +1,31 @@
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(30, 9, 14, 0.7), rgba(30, 9, 14, 0.7)),
+    url("/assets/hero-bg.jpg") no-repeat center / cover;
+}
+
+.hero__container {
+  flex-direction: column-reverse !important;
+  text-align: center;
+  padding-block: 5rem;
+
+  height: inherit;
+}
+h1 {
+  line-height: 1.1;
+  margin: 2rem;
+  font-size: clamp(1rem, 10vw, 4rem);
+  color: var(--color-bg);
+}
+.hero__content .description {
+  color: var(--color-white);
+}
+.hero__image {
+  max-width: 300px;
+}
+@media (width >= 1024px) {
+  .hero .container {
+    flex-direction: row !important;
+  }
+}

@@ -1,0 +1,17 @@
+@import url("./css/header.css");
+@import url("./css/hero.css");
+@import url("./css/about.css");
+@import url("./css/specializations.css");
+@import url("./css/contact.css");
+@import url("./css/footer.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}
