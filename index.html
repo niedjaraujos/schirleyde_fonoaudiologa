@@ -33,7 +33,7 @@
 
     <meta name="robots" content="index, follow" />
 
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.svg" />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -89,5 +89,93 @@
       }
     </script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header__container">
+        <a href="#home" class="header__logo">
+          <img src="./assets/favicon.svg" alt="" />
+          <p class="logo__title">Schirleyde Silva</p>
+        </a>
+        <nav class="nav" aria-label="Navegação Principal">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__list-item">Home</a></li>
+            <li>
+              <a href="#especiliazacoes" class="nav__list-item"
+                >Especializações</a
+              >
+            </li>
+            <li><a href="#sobre" class="nav__list-item">Sobre</a></li>
+            <li>
+              <a href="#depoimentos" class="nav__list-item">Depoimentos</a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5581998080366?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta"
+                class="nav__contato"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Fale conosco pelo WhatsApp"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-hamburguer" aria-label="Abrir menu">
+          <img src="./assets/hamburguer.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1>Fonoaudióloga Schirleyde Silva.</h1>
+            <p class="description">
+              Cuidando da sua comunicação com carinho e profissionalismo.
+              Atendimento personalizado para crianças, adultos e idosos com
+              excelência e acolhimento.
+            </p>
+
+            <div class="hero__buttons">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                aria-label="Fale conosco pelo WhatsApp"
+                >Agende uma consulta</a
+              >
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                aria-label="Fale conosco pelo WhatsApp"
+                >Conheça mais</a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="/assets/hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- acesibilidade de libras do governo -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!-- javaScript para dinamica -->
+    <script src="script.js"></script>
+  </body>
 </html>

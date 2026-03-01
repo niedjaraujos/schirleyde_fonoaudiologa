@@ -2,12 +2,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem;
-  /* background-color: var(--color-bg); 
-  border-bottom: 1px solid #c99aa0;*/
+  padding-inline: 1rem;
   transition: background-color 0.3s ease;
   z-index: 1000;
-  height: 80px;
+  height: 100px;
 }
 header.scrolled {
   background-color: rgba(0, 0, 0, 0.3);
@@ -35,7 +33,7 @@ header.scrolled {
   width: 50px;
 }
 .logo__title {
-  color: var(--color-bg);
+  color: var(--color-text);
   font-size: 1.5rem;
 }
 .menu-hamburguer img {
@@ -52,7 +50,6 @@ header.scrolled {
   right: 0;
   top: 40px;
   text-align: right;
-
   z-index: 1000;
   display: none;
   border-radius: var(--border-radius-sm);
@@ -62,7 +59,7 @@ header.scrolled {
 }
 .nav__list-item {
   font-size: 1.25rem;
-  color: var(--color-bg);
+  color: var(--color-text);
   padding: 0.25rem 1rem;
   border-radius: var(--border-radius-sm);
   display: block;
@@ -77,14 +74,15 @@ header.scrolled {
   display: none;
   border-radius: var(--border-radius-sm);
   transition: ease-in-out 0.3s;
-  background-color: var(--color-accent);
-  color: var(--color-bg);
+  background-color: var(--color-cta);
+  color: var(--color-text-light);
   font-size: 1.25rem;
   padding: 0.5rem 1rem;
 }
 .nav__contato:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px var(--color-bottoms);
+  background-color: var(--color-cta-hover);
 }
 @media (width >=768px) {
   header {
