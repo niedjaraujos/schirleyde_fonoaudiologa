@@ -10,9 +10,7 @@
 }
 h1 {
   line-height: 1.1;
-  margin-block: 2rem;
   font-size: clamp(1rem, 10vw, 4rem);
-  color: var(--color-text);
 }
 .hero__content {
   display: flex;
@@ -29,6 +27,12 @@ h1 {
   width: 100%;
   gap: 1rem;
   text-align: center;
+}
+
+.hero__buttons a:last-child {
+  background: transparent;
+  color: var(--color-cta);
+  border: 2px solid var(--color-cta);
 }
 @media (width >= 1024px) {
   .hero .container {

@@ -18,25 +18,17 @@
 /* variaveis cores e fontes */
 
 :root {
-  --color-primary: #c4788a;
-  --color-secondary: #7a2d42;
-  --color-cta: #8b2f8a;
-  --color-cta-hover: #6a1f6a;
-
+  --color-cta: #8c2f47;
+  --color-cta-hover: #6e2238;
+  --color-primary: #1e2a38;
+  --color-secondary: #355c7d;
+  --color-bg: #f8f5f5;
+  --color-bg-alt: #ebe3e5;
   --color-card-bg: #ffffff;
-  --color-bg: #f2eaec;
-
-  --color-footer-bg: #3d1220;
-
-  /* Fundo da seção CTA — roxo escuro (contraste forte, urgência) */
-  --color-cta-section-bg: #5c1f5b;
-  --color-text: #1e0a0e;
-  --color-text-muted: #6b3d45;
-
-  --color-text-light: #f5eced;
-
-  /* Texto do footer */
-  --color-text-footer: #d4a8b0;
+  --color-footer-bg: #141c26;
+  --color-text: #2c3338;
+  --color-text-muted: #5c6670;
+  --color-text-light: #f8f5f5;
 
   --font-heading: "Lora", serif;
   --font-base: "Nunito", sans-serif;
@@ -89,10 +81,11 @@ h3 {
   font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
 }
 h2 {
   font-size: clamp(1rem, 10vw, 3rem);
-  color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
 .subtitle {
@@ -128,7 +121,7 @@ h2 {
 }
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px var(--color-bottoms);
+
   background-color: var(--color-cta-hover);
 }
 .image {
