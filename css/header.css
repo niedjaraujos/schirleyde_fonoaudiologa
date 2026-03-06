@@ -9,6 +9,7 @@ header {
 }
 header.scrolled {
   background: rgba(245, 212, 220, 0.5);
+  box-shadow: 0 2px 20px rgba(163, 129, 140, 0.9);
   backdrop-filter: blur(10px);
 }
 .header__container {
