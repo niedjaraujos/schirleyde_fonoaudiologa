@@ -3,12 +3,12 @@ header {
   top: 0;
   width: 100%;
   padding-inline: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
   z-index: 1000;
-  height: 100px;
+  height: 80px;
 }
 header.scrolled {
-  background-color: var(--color-bg);
+  background: rgba(245, 212, 220, 0.5);
   backdrop-filter: blur(10px);
 }
 .header__container {
@@ -25,7 +25,6 @@ header.scrolled {
   gap: 0.5rem;
   transition: transform ease-in-out 0.3s;
 }
-
 .header__logo:hover {
   transform: scale(1.1);
 }
@@ -35,6 +34,7 @@ header.scrolled {
 .logo__title {
   color: var(--color-text);
   font-size: 1.5rem;
+  font-weight: 700;
 }
 .menu-hamburguer img {
   width: 40px;
@@ -95,9 +95,6 @@ header.scrolled {
   background-color: var(--color-cta-hover);
 }
 @media (width >=768px) {
-  header {
-    padding: 0.5rem 4rem;
-  }
   .nav__list {
     display: flex;
     position: sticky;

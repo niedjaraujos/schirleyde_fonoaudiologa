@@ -3,6 +3,27 @@
   background:
     linear-gradient(rgba(242, 234, 236, 0.8), rgb(242, 234, 236, 0.8)),
     url("/assets/hero-bg.jpg") no-repeat center / cover;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="purple" opacity="0.1"/><circle cx="75" cy="80" r="1.5" fill="purple" opacity="0.1"/><circle cx="80" cy="50" r="2" fill="purple" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  animation: float 30s infinite linear;
+
+  pointer-events: none; /*botoes sobrepoem o before */
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
 }
 .hero__container {
   flex-direction: column-reverse !important;
@@ -17,9 +38,11 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 700px;
 }
 .hero__content .description {
   color: var(--color-muted);
+  font-size: 1.375rem;
 }
 .hero__buttons {
   display: flex;
@@ -37,6 +60,7 @@ h1 {
 @media (width >= 1024px) {
   .hero .container {
     flex-direction: row !important;
+    margin-top: 2rem;
   }
 
   .hero__content {

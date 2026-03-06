@@ -33,7 +33,7 @@
   --font-heading: "Lora", serif;
   --font-base: "Nunito", sans-serif;
 
-  --border-radius-sm: 6px;
+  --border-radius-sm: 32px;
   --width-container: 1280px;
 }
 html {
@@ -121,7 +121,6 @@ h2 {
 }
 .btn:hover {
   transform: translateY(-4px);
-
   background-color: var(--color-cta-hover);
 }
 .image {
