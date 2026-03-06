@@ -7,3 +7,9 @@ window.addEventListener("scroll", () => {
     scrollBar.classList.remove("scrolled");
   }
 });
+// hamburger.addEventListener("keydown", (e) => {
+//   if (e.key === "Enter" || e.key === " ") {
+//     e.preventDefault();
+//     hamburger.click();
+//   }
+// });

@@ -13,7 +13,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  user-select: none;
 }
 /* variaveis cores e fontes */
 
@@ -118,6 +117,7 @@ h2 {
   background-color: var(--color-cta);
   color: var(--color-bg);
   font-size: 1.25rem;
+  user-select: none;
 }
 .btn:hover {
   transform: translateY(-4px);
@@ -132,16 +132,7 @@ img {
   width: 100%;
   display: block;
 }
-@media (min-width: 768px) {
-  .image {
-    max-width: 420px;
-  }
-}
-@media (min-width: 1024px) {
-  .image {
-    max-width: 500px;
-  }
-}
+
 /* cards */
 .cards {
   display: grid;
@@ -164,4 +155,17 @@ img {
   transform: translateY(-4px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   border-color: var(--color-accent);
+}
+@media (min-width: 768px) {
+  .image {
+    max-width: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    padding: 5rem;
+  }
+  .image {
+    max-width: 500px;
+  }
 }

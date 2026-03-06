@@ -27,7 +27,6 @@
 }
 .hero__container {
   flex-direction: column-reverse !important;
-  padding-block: 5rem;
 }
 h1 {
   line-height: 1.1;
@@ -60,7 +59,7 @@ h1 {
 @media (width >= 1024px) {
   .hero .container {
     flex-direction: row !important;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   .hero__content {
